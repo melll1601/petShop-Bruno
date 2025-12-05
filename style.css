@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 28px;
+    padding-bottom: 112px;
+}
+
+.header div {
+    flex-direction: row;
+}
+
+.text-hero{
+    padding: 0 50px 0 27px;
+}
