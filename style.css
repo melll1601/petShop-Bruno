@@ -1,20 +1,60 @@
-* {
+:root{
+    --font-family: Formative
+}
+
+@font-face {
+    font-family: 'Formative';
+    src: url('/fonts/formative-font-family-1765199777-0/FormativeTrial-Regular-BF656fed9028715.otf')
+    format('opentype');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Formative';
+    src: url('/fonts/formative-font-family-1765199777-0/FormativeTrial-Bold-BF656fed900a747.otf')
+    format('opentype');
+    font-weight: 700;
+}
+
+*{
     margin: 0;
     padding: 0;
-    border: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: var(--font-family);
 }
 
 .header {
     display: flex;
     justify-content: space-between;
-    padding-top: 28px;
-    padding-bottom: 112px;
+    margin:
+        clamp(18px, calc(28px + (18 - 28) * ((100vw - 390px) / 1050)), 28px)
+        clamp(18px, calc(18px + (80 - 18) * ((100vw - 390px) / 1050)), 80px)
+        0
+        clamp(15px, calc(15px + (80 - 15) * ((100vw - 390px) / 1050)), 80px);
 }
 
-.header div {
-    flex-direction: row;
+#header-desktop{
+    display:none
 }
 
-.text-hero{
-    padding: 0 50px 0 27px;
+#logo-pawsplay{
+    display:flex;
+    display:flex;
+    gap: 11px
+}
+
+#main{
+    padding: 0 16px
+}
+
+#logo-pawsplay img {
+    width: 32px;
+    height: 32px
+}
+
+.header-desktop{
+    display: none;
 }
