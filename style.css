@@ -1,35 +1,33 @@
-:root{
+:root {
     --font-family: Formative
 }
 
 @font-face {
     font-family: 'Formative';
-    src: url('/fonts/formative-font-family-1765199777-0/FormativeTrial-Regular-BF656fed9028715.otf')
-    format('opentype');
+    src: url('/fonts/formative-font-family-1765199777-0/FormativeTrial-Regular-BF656fed9028715.otf') format('opentype');
     font-weight: 400;
 }
 
 @font-face {
     font-family: 'Formative';
-    src: url('/fonts/formative-font-family-1765199777-0/FormativeTrial-Bold-BF656fed900a747.otf')
-    format('opentype');
+    src: url('/fonts/formative-font-family-1765199777-0/FormativeTrial-Bold-BF656fed900a747.otf') format('opentype');
     font-weight: 700;
 }
 
-#bg-banner{
+#bg-banner {
     background-image: url('/Assets/bgi-petshop.png');
-    background-repeat: no-repeat;    
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: var(--font-family);
 }
 
@@ -37,28 +35,25 @@ body{
     display: flex;
     justify-content: space-between;
     padding:
-        clamp(18px, calc(28px + (18 - 28) * ((100vw - 390px) / 1050)), 28px)
-        clamp(18px, calc(18px + (80 - 18) * ((100vw - 390px) / 1050)), 80px)
-        0
-        clamp(15px, calc(15px + (80 - 15) * ((100vw - 390px) / 1050)), 80px);
+        clamp(18px, calc(28px + (18 - 28) * ((100vw - 390px) / 1050)), 28px) clamp(18px, calc(18px + (80 - 18) * ((100vw - 390px) / 1050)), 80px) 0 clamp(15px, calc(15px + (80 - 15) * ((100vw - 390px) / 1050)), 80px);
 }
 
-#header-desktop{
-    display:none
+#header-desktop {
+    display: none
 }
 
-#logo-pawsplay{
-    display:flex;
-    display:flex;
+#logo-pawsplay {
+    display: flex;
+    display: flex;
     gap: 11px
 }
 
-#logo-pawsplay h1{
+#logo-pawsplay h1 {
     font-size: 20px;
     color: white;
 }
 
-#main{
+#main {
     padding: 0 16px
 }
 
@@ -67,21 +62,41 @@ body{
     height: 32px
 }
 
-.text-hero h1{
-    font-size: clamp(30px, 1.1786rem + 2.857vw, 60px);
-}
 
-.header-desktop{
+.header-desktop {
     display: none;
 }
 
-.text-hero{
+.text-hero {
     padding-top: clamp(112px, 5.8627rem + 4.666vw, 161px);
     padding-right: clamp(50px, -12.66rem + 64.76vw, 730px);
-    padding-bottom: clamp(81px, 1.093rem + 16.285vw, 252px);
     padding-left: clamp(27px, 0.4572rem + 5.0476vw, 80px);
 }
 
-.text-hero p{
+.text-hero p {
     font-size: clamp(14px, 0.8286rem + 0.1905vw, 16px);
+    color: white;
+    letter-spacing: 0%;
+    line-height: 1.5rem;
+}
+
+
+.text-hero h1 {
+    font-size: clamp(30px, 1.1786rem + 2.857vw, 60px);
+    color: white;
+    font-weight: 400;
+    padding-bottom: clamp(10px, 1.42vw, 20px);
+    line-height: 100%;
+    letter-spacing: 2%;
+}
+
+.button-shop-now p {
+    color: white;
+}
+
+.button-shop-now {
+    padding-bottom: clamp(81px, 1.093rem + 16.285vw, 252px);
+    padding-top: clamp(30px, 10vw, 50px);
+    display: flex;
+    gap: 14px;
 }
