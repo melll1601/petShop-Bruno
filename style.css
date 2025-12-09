@@ -31,11 +31,10 @@ body {
     font-family: var(--font-family);
 }
 
-.header {
+.header{
     display: flex;
     justify-content: space-between;
     padding: clamp(18px, calc(28px + (18 - 28) * ((100vw - 390px) / 1050)), 28px) clamp(18px, calc(18px + (80 - 18) * ((100vw - 390px) / 1050)), 80px) 0 clamp(15px, calc(15px + (80 - 15) * ((100vw - 390px) / 1050)), 80px);
-
 }
 
 #header-desktop {
@@ -43,7 +42,6 @@ body {
 }
 
 #logo-pawsplay {
-    display: flex;
     display: flex;
     gap: 11px
 }
@@ -71,6 +69,7 @@ body {
     padding-top: clamp(112px, 5.8627rem + 4.666vw, 161px);
     padding-right: clamp(50px, -12.66rem + 64.76vw, 730px);
     padding-left: clamp(27px, 0.4572rem + 5.0476vw, 80px);
+    padding-bottom: 3rem;
 }
 
 .text-hero p {
@@ -93,7 +92,7 @@ body {
 }
 
 .button-shop-now {
-    display: flex;
+    display: inline-flex;
     gap: 14px;
     border: solid 1px;
     border-color: white;
@@ -103,9 +102,37 @@ body {
 }
 
 .button-shop-now a {
-    display: inline-block;
     margin: 0;
     padding: 0;
-    line-height: 1; /* remove espaço da linha */
+    line-height: 1;
+    list-style: none;
+    text-decoration: none;
+    color: white;
 }
 
+@media(min-width:1024px) {
+
+    .header-mobile{
+        display: none;
+    }
+
+    .header-desktop{
+        display: flex;
+        justify-content:space-around;
+    }
+
+    .options{
+        display: flex;
+    }
+
+    .specific-options{
+        display: flex;
+    }
+
+    #logo-pawsplay{
+        display: flex   ;
+    }
+
+    
+
+}
