@@ -16,6 +16,13 @@
     font-weight: 700;
 }
 
+#bg-banner{
+    background-image: url('/Assets/bgi-petshop.png');
+    background-repeat: no-repeat;    
+    background-size: cover;
+    background-position: center;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -29,7 +36,7 @@ body{
 .header {
     display: flex;
     justify-content: space-between;
-    margin:
+    padding:
         clamp(18px, calc(28px + (18 - 28) * ((100vw - 390px) / 1050)), 28px)
         clamp(18px, calc(18px + (80 - 18) * ((100vw - 390px) / 1050)), 80px)
         0
@@ -46,6 +53,11 @@ body{
     gap: 11px
 }
 
+#logo-pawsplay h1{
+    font-size: 20px;
+    color: white;
+}
+
 #main{
     padding: 0 16px
 }
@@ -55,6 +67,21 @@ body{
     height: 32px
 }
 
+.text-hero h1{
+    font-size: clamp(30px, 1.1786rem + 2.857vw, 60px);
+}
+
 .header-desktop{
     display: none;
+}
+
+.text-hero{
+    padding-top: clamp(112px, 5.8627rem + 4.666vw, 161px);
+    padding-right: clamp(50px, -12.66rem + 64.76vw, 730px);
+    padding-bottom: clamp(81px, 1.093rem + 16.285vw, 252px);
+    padding-left: clamp(27px, 0.4572rem + 5.0476vw, 80px);
+}
+
+.text-hero p{
+    font-size: clamp(14px, 0.8286rem + 0.1905vw, 16px);
 }
