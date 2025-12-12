@@ -1,7 +1,7 @@
 async function salvar() {
     const nome = "Daniel";
     const email = "daniel@email.com";
-    const senha = "123";
+    const senha = "freefire2017";
 
     await fetch("http://localhost:3000/cadastrar", {
         method: "POST",
@@ -9,7 +9,6 @@ async function salvar() {
         body: JSON.stringify({ nome, email, senha })
     });
 
-    alert("Usuário cadastrado!");
 }
 
 salvar();
