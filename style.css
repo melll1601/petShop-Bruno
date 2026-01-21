@@ -15,7 +15,7 @@
 }
 
 #bg-banner {
-    background-image: url('/Assets/bgi-petshop.png');
+    background-image: url('/Assets/bg-background-banner.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -89,8 +89,11 @@ body {
 }
 
 #main {
-    padding: 0 16px
+    padding-left: clamp(16px, 6.1vw - 7.8px, 80px);
+    padding-right: clamp(16px, 6.1vw - 7.8px, 80px);
+;
 }
+
 
 #logo-pawsplay img {
     width: 32px;
@@ -145,6 +148,25 @@ body {
     list-style: none;
     text-decoration: none;
     color: white;
+}
+
+
+.title-h2-img{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    padding-top: clamp(40px, 2.86vw + 28.9px, 70px);
+    border-bottom: 0.2px solid #757575;
+    padding-bottom: clamp(10px, 0.57vw + 7.8px, 16px);
+}
+
+.title-h2-img h2{
+    font-weight: 500;
+    font-size: clamp(20px, 1.43vw + 14.4px, 35px);
+}
+.title-h2-img img{
+    width: 32px;
+    height: 32px;
 }
 
 
